@@ -1,27 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Riviera Maya 2026 holiday countdown" />
-  <title>Riviera Maya Holiday Countdown</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#063d43">
+  <title>Mexico Crew 2026 — Riviera Maya Countdown</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+
   <style>
-    :root { --text-xs:clamp(.75rem,.7rem + .25vw,.875rem);--text-sm:clamp(.875rem,.8rem + .35vw,1rem);--text-base:clamp(1rem,.95rem + .25vw,1.125rem);--text-xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);--text-2xl:clamp(2rem,1.2rem + 2.5vw,3.5rem);--s2:.5rem;--s3:.75rem;--s4:1rem;--s5:1.25rem;--s6:1.5rem;--s8:2rem;--s12:3rem;--radius:1.2rem;--radius-xl:1.75rem;--gold:#f2c45a;--text:#f8fbfb;--muted:#d7ece9;--border:rgba(234,219,188,.26);--shadow:rgba(8,34,38,.28);--display:'Cinzel',Georgia,serif;--body:'Manrope',Arial,sans-serif}
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;min-height:100vh;font-family:var(--body);color:var(--text);background:linear-gradient(rgba(8,62,70,.55),rgba(4,39,47,.72)),url('https://pplx-res.cloudinary.com/image/upload/pplx_search_images/19a70e571a6b471a601e60a6a2b5c43fd3c53db3.jpg') center/cover fixed no-repeat}body:before{content:'';position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at top left,rgba(88,212,208,.22),transparent 32%),radial-gradient(circle at bottom right,rgba(255,208,102,.14),transparent 24%);opacity:.35}.shell{position:relative;z-index:1;width:min(1180px,calc(100% - 2rem));margin:auto;padding:var(--s8) 0 var(--s12)}.hero,.panel,.calendar-wrap{border:1px solid var(--border);box-shadow:0 18px 45px var(--shadow);backdrop-filter:blur(10px);border-radius:var(--radius-xl);overflow:hidden}.hero{padding:clamp(1.5rem,3vw,3rem);background:linear-gradient(145deg,rgba(8,82,92,.78),rgba(15,107,108,.64))}.top{display:flex;justify-content:space-between;align-items:center;gap:var(--s4);flex-wrap:wrap}.brand{display:flex;align-items:center;gap:.8rem;font-size:var(--text-sm);letter-spacing:.14em;text-transform:uppercase;color:#fff4d6}.logo{width:42px;color:var(--gold)}.badge{padding:.65rem .95rem;border-radius:999px;background:rgba(242,196,90,.12);border:1px solid rgba(242,196,90,.28);font-size:var(--text-xs);color:#fff4d6}h1{margin:var(--s5) 0 var(--s3);font-family:var(--display);font-size:var(--text-2xl);line-height:1.05;max-width:12ch}.intro{max-width:64ch;color:var(--muted);font-size:var(--text-base)}.actions{display:flex;gap:var(--s3);margin-top:var(--s6);flex-wrap:wrap}.button{display:inline-flex;justify-content:center;align-items:center;min-height:46px;padding:.85rem 1.15rem;border-radius:999px;text-decoration:none;font-size:var(--text-sm);font-weight:700}.primary{background:rgba(242,196,90,.95);color:#183437}.secondary{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14)}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:var(--s4);margin-top:var(--s6)}.stat{padding:var(--s4);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius)}.stat strong{display:block;font-family:var(--display);font-size:var(--text-xl)}.stat span{color:var(--muted);font-size:var(--text-sm)}.gallery{display:grid;grid-template-columns:1.15fr .85fr;gap:var(--s4);margin-top:var(--s8)}.panel{min-height:240px;position:relative}.panel img{display:block;width:100%;height:100%;object-fit:cover}.label{position:absolute;left:1rem;bottom:1rem;padding:.55rem .8rem;border:1px solid rgba(255,255,255,.18);background:rgba(10,34,38,.5);border-radius:999px;font-size:var(--text-sm)}.calendar-wrap{margin-top:var(--s8);padding:clamp(1.25rem,2vw,2rem);background:linear-gradient(145deg,rgba(8,57,64,.76),rgba(6,37,44,.8))}h2{margin:0;font-family:var(--display);font-size:var(--text-xl)}.calendar-wrap p{color:var(--muted)}.calendar{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:var(--s4)}.door{position:relative;min-height:150px;border-radius:var(--radius);overflow:hidden;border:1px solid rgba(228,220,196,.2);background:linear-gradient(160deg,rgba(7,96,105,.62),rgba(16,54,61,.86));box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 10px 22px rgba(0,0,0,.18);cursor:pointer;transform-style:preserve-3d;transition:transform .18s ease,box-shadow .18s ease}.door:hover{transform:translateY(-2px)}.door.locked{cursor:not-allowed;filter:saturate(.78)}@keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(58,222,214,.25),0 10px 22px rgba(0,0,0,.18)}50%{box-shadow:0 0 32px 8px rgba(58,222,214,.72),0 0 56px 10px rgba(255,196,76,.55),0 12px 28px rgba(0,0,0,.24)}}.next{border-color:rgba(92,245,231,.62);animation:glow 2.2s ease-in-out infinite}.face,.back{position:absolute;inset:0;padding:var(--s4);display:flex;flex-direction:column;justify-content:space-between;backface-visibility:hidden}.face{background:linear-gradient(rgba(10,24,27,.18),rgba(10,24,27,.38)),url('https://pplx-res.cloudinary.com/image/upload/pplx_search_images/47f39587a197ba8e1c4cbb2b33da16084f2c6613.jpg') center/cover}.face:after{content:'';position:absolute;inset:0;background:linear-gradient(160deg,rgba(9,113,116,.42),rgba(7,43,47,.42))}.face>* ,.back>*{z-index:1}.date{align-self:flex-start;padding:.32rem .55rem;border-radius:999px;background:rgba(23,39,42,.56);border:1px solid rgba(242,196,90,.4);font-size:var(--text-xs);font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--gold)}.number{font-family:var(--display);font-size:clamp(1.7rem,2vw,2.25rem);line-height:1}.caption{font-size:var(--text-xs);letter-spacing:.08em;text-transform:uppercase}.back{transform:rotateY(180deg);background-size:cover;background-position:center;justify-content:end}.back:before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.05),rgba(10,10,10,.65))}.open .face{transform:rotateY(180deg)}.open .back{transform:rotateY(360deg)}.face,.back{transition:transform .7s cubic-bezier(.16,1,.3,1)}.note{font-size:var(--text-sm);font-weight:700}.footer{margin-top:var(--s6);text-align:center;color:var(--muted);font-size:var(--text-xs)}@media(max-width:860px){.gallery{grid-template-columns:1fr}}@media(max-width:760px){.shell{width:min(100% - 1rem,100%)}.calendar{grid-template-columns:repeat(2,minmax(0,1fr))}.door{min-height:132px}h1{max-width:none}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.next{animation:none}.door,.face,.back{transition:none}}
-  </style>
-</head>
-<body>
-<main class="shell">
-<section class="hero"><div class="top"><div class="brand"><svg class="logo" viewBox="0 0 64 64" fill="none" aria-label="Riviera Maya countdown logo"><path d="M32 6 54 18v28L32 58 10 46V18L32 6Z" stroke="currentColor" stroke-width="3"/><path d="M32 16 44 22v16L32 48 20 38V22l12-6Z" stroke="currentColor" stroke-width="3"/><path d="M32 22v20M22 32h20" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><span>Riviera Maya 2026</span></div><span class="badge">Holiday countdown</span></div><h1>Mexico holiday countdown</h1><p class="intro">The group countdown to Riviera Maya — with a live timer, gold date labels, and a glowing next door to open each day until 29 September 2026.</p><div class="actions"><a class="button primary" href="#calendar">Open countdown</a><a class="button secondary" href="#calendar">See the doors</a></div><div class="stats"><div class="stat"><strong id="days">--</strong><span>Days to departure</span></div><div class="stat"><strong id="today">--</strong><span>Today</span></div><div class="stat"><strong>29 Sep 2026</strong><span>Departure date</span></div></div></section>
-<section class="gallery"><figure class="panel"><img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/27de5a14043f1ce434c03cde6c5bab3aa39f603a.jpg" alt="Turquoise Riviera Maya cenote" width="1136" height="845" loading="lazy"><figcaption class="label">Cenote dreams</figcaption></figure><figure class="panel"><img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/19a70e571a6b471a601e60a6a2b5c43fd3c53db3.jpg" alt="Riviera Maya beach with turquoise sea" width="1400" height="891" loading="lazy"><figcaption class="label">Caribbean shoreline</figcaption></figure></section>
-<section class="calendar-wrap"><h2>Open the doors</h2><p>The next door glows so everyone can see which date to open next.</p><div id="calendar" class="calendar" aria-live="polite"></div><p class="footer">Gold date labels and a turquoise glow make the next day easy to spot.</p></section>
-<p class="footer">Riviera Maya 2026 holiday countdown</p>
-</main>
-<script>
-const departure=new Date('2026-09-29T00:00:00');const today=new Date();today.setHours(0,0,0,0);const day=86400000;const left=Math.max(0,Math.ceil((departure-today)/day));document.querySelector('#days').textContent=left;document.querySelector('#today').textContent=today.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});const scenes=[['https://pplx-res.cloudinary.com/image/upload/pplx_search_images/19a70e571a6b471a601e60a6a2b5c43fd3c53db3.jpg','Beach day energy'],['https://pplx-res.cloudinary.com/image/upload/pplx_search_images/27de5a14043f1ce434c03cde6c5bab3aa39f603a.jpg','Hidden cenote calm'],['https://pplx-res.cloudinary.com/image/upload/pplx_search_images/18b45d9da0d94cef4b2dd7dbb2c9179305b1ba96.jpg','Pool bar cheers'],['https://pplx-res.cloudinary.com/image/upload/pplx_search_images/de795ada7cf36c119633b4f20a26c2597ddca5d0.jpg','Holiday drinks selfie'],['https://pplx-res.cloudinary.com/image/upload/pplx_search_images/78206472fd25035808d6afcfe4f1c528d1ad7b33.jpg','Jungle water escape'],['https://pplx-res.cloudinary.com/image/upload/pplx_search_images/b6032242dc83e6fcdd1b881ef403249c1706d8fc.jpg','Cocktails in the sun']];const cal=document.querySelector('#calendar');const total=Math.max(1,left);for(let i=1;i<=total;i++){const date=new Date(today);date.setDate(today.getDate()+i-1);const label=date.toLocaleDateString('en-GB',{day:'numeric',month:'short'});const unlocked=i===1||left===0;const scene=scenes[(i-1)%scenes.length];const b=document.createElement('button');b.type='button';b.className='door '+(i===1?'next ':'')+(unlocked?'':'locked');b.disabled=!unlocked;b.setAttribute('aria-label',unlocked?'Open '+label:label+' locked');b.innerHTML='<span class="face"><span class="date">'+label+'</span><span class="number">'+i+'</span><span class="caption">'+(unlocked?'Open this one next':(total-i+1)+' sleeps to go')+'</span></span><span class="back" style="background-image:url(''+scene[0]+'')"><span class="date">'+label+'</span><span class="note">'+scene[1]+'</span></span>';b.addEventListener('click',()=>b.classList.toggle('open'));cal.appendChild(b)}
-</script>
-</body>
-</html>
+    :root {
+      --ink: #102c2e;
+      --cream: #f8f0df;
+      --sand: #ead5ab;
+      --gold: #d6a13a;
+      --gold-light: #f1cf78;
+      --jade: #14625c;
+      --deep-jade: #063d43;
+      --coral: #bd684b;
+      --white: #fffdf7;
+      --shadow: 0 18px 50px rgba(4, 42, 43, 0.22);
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: "DM Sans", Arial, sans-serif;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(241, 207, 120, 0.5), transparent 25rem),
+        linear-gradient(180deg, #f9f1df 0%, #edf0dd 56%, #f8f0df 100%);
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -5rem;
+      left: 1rem;
+      background: var(--white);
+      color: var(--deep-jade);
+      padding: 0.75rem 1rem;
+      border-radius: 0 0 0.75rem 0.75rem;
+      z-index: 20;
+      font-weight: 700;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 460px;
+      color: var(--white);
+      display: grid;
+      align-items: end;
+      background:
+        linear-gradient(90deg, rgba(5, 43, 47, 0.93) 0%, rgba(5, 43, 47, 0.68) 45%, rgba(5, 43, 47, 0.2) 100%),
+        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=85") center/cover;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -130px auto;
+      width: 360px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 1px solid rgba(241, 207, 120, 0.55);
+      box-shadow:
+        0 0 0 25px rgba(241, 207, 120, 0.08),
+        0 0 0 50px rgba(241, 207, 120, 0.05);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      width: min(1120px, calc(100% - 2rem));
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+      padding: 4rem 0 4.5rem;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--gold-light);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 2.2rem;
+      height: 1px;
+      background: currentColor;
+    }
+
+    h1, h2, h3, p 
