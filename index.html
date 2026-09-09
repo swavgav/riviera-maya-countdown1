@@ -10,14 +10,7 @@ const images = [
   'https://pplx-res.cloudinary.com/image/upload/pplx_search_images/31bdfb8218704b0c1829e46429bd506dc960845a.jpg',
   'https://pplx-res.cloudinary.com/image/upload/pplx_search_images/ef3717040164be1c86160d561a386156131714a2.jpg',
   'https://pplx-res.cloudinary.com/image/upload/pplx_search_images/6cafa8f7dd454316be62fbd3d0cb8f7ec9a11585.jpg',
-  'https://pplx-res.cloudinary.com/image/upload/pplx_search_images/10a76b2bc63918c1aae46b0523c5629f44abbd93.jpg',
-  'https://pplx-res.cloudinary.com/image/upload/pplx_search_images/ca2d2a3d640625d0a3b5a4d6d3f7c1aba46f76ee.jpg',
-  'https://pplx-res.cloudinary.com/image/upload/pplx_search_images/8953b23667de713efcef22aa04f46f6ff601097e.jpg',
-  'https://pplx-res.cloudinary.com/image/upload/pplx_search_images/e378a8298c2aaf6a9816bf3ab097a344a580f47d.jpg',
-  'https://pplx-res.cloudinary.com/image/upload/pplx_search_images/f8f7dabf0e4a5862d75cbf6e0236f131640c5f01.jpg',
-  'https://pplx-res.cloudinary.com/image/upload/pplx_search_images/170bd832a651786df62bdea13f9064866d54c450.jpg',
-  'https://pplx-res.cloudinary.com/image/upload/pplx_search_images/009514f2acddeff5b3a984b804d71f59be996885.jpg',
-  'https://pplx-res.cloudinary.com/image/upload/pplx_search_images/bf14e3b292aa31b39a1a56ac69e79b4e6833e83f.jpg'
+  'https://pplx-res.cloudinary.com/image/upload/pplx_search_images/10a76b2bc63918c1aae46b0523c5629f44abbd93.jpg'
 ]
 const grid = document.getElementById('calendarGrid');
 const daysEl = document.getElementById('days');
@@ -61,7 +54,7 @@ function updateCountdown() {
     door.className = `door ${opened ? 'open' : ''} ${isToday ? 'today' : ''} ${locked ? 'locked' : ''}`;
     door.type = 'button';
     door.setAttribute('aria-label', `${date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long' })}${opened ? ', opened' : isToday ? ', ready to open' : ', locked until this date'}`);
-    door.innerHTML = `<img class="door-photo" src="${imageUrl}" alt="Riviera Maya inspired holiday scene" loading="lazy"><span class="door-face" aria-hidden="true"><strong class="door-number">${doorNumber}</strong><small class="door-date">${date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}</small></span>`;
+    door.innerHTML = `<img class="door-photo" src="${imageUrl}" alt="Riviera Maya inspired holiday scene" referrerpolicy="no-referrer" loading="eager" decoding="async" onerror="this.onerror=null;this.src=images[0];"><span class="door-face" aria-hidden="true"><strong class="door-number">${doorNumber}</strong><small class="door-date">${date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}</small></span>`;
     if (!locked) door.addEventListener('click', () => door.classList.toggle('open'));
     grid.appendChild(door);
   }
